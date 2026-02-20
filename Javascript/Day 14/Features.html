@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Default parameters
+    function greet(name="Good Morninggg...")
+    {
+      console.log(name);
+      
+    }
+    greet();
+    greet("Good evening...")
+
+    // spread operator - expand or copy array and objects
+    let a=[10,20,30]
+    let b=[...a,40,50]
+    console.log(b);
+    let c=[100,90,...b]
+    console.log(c);
+
+    let person={
+      id:1,
+      name:'akshay',
+      salary:25000
+    }
+    let person2=
+    {
+      ...person,
+      id:2,
+      numbers:[...c]
+    }
+    console.log(person2);
+
+    //Rest Parameter(...)
+    function add(...a)
+    {
+      let sum=a.reduce((x,y)=>x+y,0)
+      console.log(sum); 
+    }
+    add(10,20,30,40,50,60,70)
+
+    // de-structuring 
+    let arr=[10,20,30]
+    let [x,y,z]=arr;
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+    let student={
+      rollno:1,
+      name:'amit',
+      marks:85 
+    }
+    let {marks,rollno,name}=student;
+    console.log(marks);
+    console.log(name);
+    console.log(rollno);
+
+    //classes
+    class Employee
+    {
+    
+      constructor(x)
+      {
+        console.log("This is constructor of Employee class "+x);
+      }
+
+     study()
+      {
+        console.log("I am Studyinggg");
+        console.log(this);
+      }
+    }
+
+      let emp=new Employee(10);
+      emp.study();
+
+
+
+      let developer={
+        dname:"pratik",
+        greet()
+        {
+          console.log(this.dname);
+          
+        }
+      }
+
+      developer.greet();
+    
+    
+    
+    
+
+
+    
+
+
+    
+    
+    
+
+  </script>
+</body>
+</html>

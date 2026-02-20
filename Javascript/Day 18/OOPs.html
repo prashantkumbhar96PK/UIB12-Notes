@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //oops- encapsulation
+    let student={
+      rollno:1,
+      name:"akshay",
+      marks:68,
+      study:function()
+      {
+          console.log("Student is studying...");
+          
+      }
+    }
+    student.study();
+    console.log(student.rollno);
+
+    //oops- abstraction
+    function ATM(){
+
+      this.withdraw=function()
+      {
+          console.log("Money get withdraw here");
+          
+      }
+    }
+
+    let user=new ATM();
+    user.withdraw();
+    
+    // oops- inheritance
+    class Animal
+    {
+      eat()
+      {
+        console.log("Animal Eats");
+        
+      }
+    }
+
+    class Dog extends Animal
+    {
+      bark()
+      {
+        console.log("dog is barking");
+        
+      }
+    }
+   let a=new Animal();
+   a.eat();
+   //a.bark();  error
+
+   let b=new Dog();
+   b.bark();
+   b.eat();
+
+   //OOPs- polymorphism
+   class Shape
+   {
+    draw()
+    {
+      console.log("Drawing any shape");
+      
+    }
+  
+   }
+
+   class Circle extends Shape
+   {
+    draw()
+    {
+      console.log("Drawing circle");
+      
+    }
+   }
+
+   let x=new Shape();
+   x.draw();
+   
+   let y=new Circle();
+   y.draw();
+
+  // Constructor function
+
+  function Person(age,name)
+  {
+    this.age=age;
+    this.name=name;
+  }
+
+  let p1=new Person(22,"amit");
+  let p2=new Person(25,"Pratik");
+
+  console.log(p1.age);
+  console.log(p1.name);
+  console.log(p2.age);
+  console.log(p2.name);
+  
+  //Hoisting
+
+  console.log(p);
+  var p=10;
+
+
+  //internal working
+  // var p;
+  // console.log(p);
+  // p=10;
+
+  //console.log(q);
+  let q=10;
+  
+  greet();
+  function greet()
+  {
+    console.log("Good morning");
+    
+  }
+
+  //hello();
+   
+  var hello=function()
+  {
+    console.log("Hello all");
+    
+  }
+
+  //hi();
+  let hi=()=>{
+    console.log("Hii All");
+    
+  }
+  
+
+
+  
+
+
+    
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model -2</title>
+    <style>
+.parent
+{
+    background-color: aqua;
+    width: 100%;
+    padding: 50px;
+    border: 2px solid blue;
+}
+
+      .child {
+        box-sizing: content-box;
+        background-color: yellow;
+        width: 500px;
+        /* border-width: 10px;
+        border-style: solid;
+        border-color: brown; */
+        border: 10px solid brown;
+        border-radius: 15px;
+        color:rgba(18, 14, 32, 0.594);
+        
+
+        padding: 10px 50px 80px 100px;
+
+         margin: 20px 50px 80px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+
+      <div class="child">
+        box-sizing: content-box; background-color: yellow; width: 500px; border:
+        10px solid red; padding: 50px; margin: 20px;
+      </div>
+
+    </div>
+  </body>
+</html>

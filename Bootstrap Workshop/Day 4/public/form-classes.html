@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body
+    class="container-fluid d-flex justify-content-center align-items-center"
+    style="height: 100vh"
+  >
+    <form
+      class="border border-2 rounded border-dark p-5 w-50 bg-warning text-dark"
+    >
+      <h3 class="bi bi-person-fill text-center">Register User</h3>
+      <div>
+        <label for="username" class="form-label">UserName</label>
+        <div>
+          <input class="form-control" type="text" name="username" />
+        </div>
+      </div>
+      <div>
+        <label for="password" class="form-label">Password</label>
+        <div>
+          <input class="form-control" type="password" name="password" />
+        </div>
+      </div>
+      <div>
+        <label for="age" class="form-label">Age</label>
+        <div>
+          <input class="form-range" type="range" name="age" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="city" class="form-label">Your City</label>
+          <div>
+            <select class="form-select">
+              <option value="">Delhi</option>
+              <option value="">Mumbai</option>
+              <option value="">Benglore</option>
+              <option value="">Chennai</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="subscribe" class="form-label">Subscribe</label>
+          <div class="form-switch">
+            <input class="form-check-input" type="checkbox" name="subscribe" />
+          </div>
+        </div>
+      </div>
+      <div class="m-3">
+        <button class="btn btn-primary w-100">Register</button>
+      </div>
+    </form>
+  </body>
+</html>

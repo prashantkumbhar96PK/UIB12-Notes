@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  /*  //Fibonacci series 0  1  1  2  3  5  8  13
+    let n=10;
+    let a=0;
+    let b=1;
+    console.log(a);
+    console.log(b);
+  
+    for(let i=1; i<=n-2; i++)
+  {
+    let c=a+b
+    console.log(c);
+    a=b;
+    b=c;
+  }
+
+  //Neon Number 9=9*9=81  ==>  8+1 => 9
+  let no=9;
+  let sq=no*no;
+let sum=0;
+  while(sq>0)
+  {
+      sum=sum+sq%10;
+      sq=Math.floor(sq/10);
+  }
+  if(no===sum)
+  {
+    console.log(`The ${no} is Neon Number`);
+  }
+  else{
+    console.log(`The ${no} is Not a Neon Number`);
+  }
+
+  // Perfect Number 6 =  1 + 2 +   3  ===> 6
+let num=6;
+let add=0;
+for(let i=1;i<num;i++)
+{
+  if(num%i==0)
+{
+  add=add+i;
+}
+}
+if(num===add)
+{
+console.log(`The ${num} is Perfect Number`);
+}
+else{
+  console.log(`The ${num} is not a Perfect Number`);
+  
+}
+
+
+
+// Strong Number 145=> 1+24+120 =>145
+let number=145;
+let temp=number;
+let addition=0;
+while(temp>0)
+{
+  let rem=temp%10;
+  let fact=1;
+  for(let i=1;i<=rem;i++)
+{
+    fact=fact*i;
+}
+addition=fact+addition;
+temp=Math.floor(temp/10);
+}
+if(number===addition)
+{
+  console.log(`The ${number} is Strong Number`);
+}
+else{
+  console.log(`The ${number} is Not a Strong Number`);
+}
+
+*/
+// Armstrong Number 153= 3 dig= 1^3 + 5^3 + 3^3 =1+125+27=153
+
+let num=153;
+let digit=num.toString().length;
+let temp=num;
+let sum=0;
+while(temp>0)
+{
+  let rem=temp%10;
+  sum=sum+Math.pow(rem,digit);
+  temp=Math.floor(temp/10);
+}
+
+if(num===sum)
+{
+  console.log(`The ${num} is Armstrong number`);
+  
+}
+else{
+ console.log(`The ${num} is Not an Armstrong number`);
+  
+}
+
+  </script>
+</body>
+</html>

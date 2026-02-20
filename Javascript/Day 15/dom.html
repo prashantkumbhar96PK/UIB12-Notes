@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+        <h1 id="head1">This is h1</h1>
+        <p class="para">Lorem ipsum dolor sit amet.</p>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, excepturi!</p>
+        <h2 >this is h2</h2>
+        <h2>This is another h2</h2>
+
+      <script>
+       let a= document.getElementById('head1');
+       console.log(a);
+
+        a.innerHTML="This is my first heading"
+        a.style.backgroundColor="aqua"
+
+       let b= document.getElementsByTagName('p')[1]
+       // b.innerHTML="this is my <b> second paragraph <b>"
+       b.innerText="this is my <b> second paragraph <b>"
+        b.style.fontStyle="italic"
+
+        let c=document.querySelectorAll('.para')[1];
+          c.style.color="red"
+
+
+
+
+
+       
+       
+       
+          
+
+
+
+      </script>
+</body>
+</html>

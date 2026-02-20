@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in js</title>
+</head>
+<body>
+  <script>
+        // Function declaration - traditional way
+function display()
+{
+    console.log("This is display function");
+    
+}
+display();
+display();
+
+function greetings(greet)
+{
+    console.log(greet);
+    
+}
+greetings('Good morning...')
+greetings('Good evening...')
+
+function add()
+{
+    console.log("addition is ");
+    
+    return 20+30;
+   
+}
+
+let op=add();
+console.log(op);
+
+console.log(add());
+
+
+function mult(x,y)
+{
+    return x*y;
+}
+
+console.log(mult(10,2));
+
+
+//Function Expression
+let a=function ()
+{
+    console.log("m1 function in js");
+    
+}
+a();
+
+let m=function (a,b,c)
+{
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    
+}
+m(10,20,30)
+
+let c=function ()
+{
+    return "Method calling session is start"
+}
+let d=c();
+console.log(d);
+console.log(c());
+
+let f=function (a,b)
+{
+    return a/b;
+}
+console.log(f(40,8));
+
+
+//Arrow Function
+
+
+
+
+
+
+
+//IIFE => Immediately invoked function expression
+
+(function ()
+{
+    console.log("IIFE function");
+    
+})();  
+
+(function (x)
+{
+    console.log(x);
+    
+})("CJC");
+
+
+
+
+  </script>  
+</body>
+</html>

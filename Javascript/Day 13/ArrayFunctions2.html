@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+      console.log("First");  //block /sync
+       console.log("second");  // block
+
+       setTimeout(()=>{             // non block / async
+           console.log("Third");
+       },3000)
+
+
+         console.log("Fourth");   //block /sync
+          console.log("Fifth");    // block
+
+      
+
+/*
+
+    //alert('This is Important file....')
+   // let input=prompt('Enter your name')
+   // console.log(input);
+  //  let result=confirm('Are you sure ?')
+  //  console.log(result);
+   
+    
+    // sort - sorts array as string form
+    let arr=[1,2,11,12,4,5,3,33,42,55,8]
+    console.log(arr);
+    arr.sort();
+    console.log(arr);
+
+     //sort((a,b)=>a-b) - 
+    let ar=[1,2,11,12,4,5,3,33,42,55,8]
+    ar.sort((a,b)=>a-b)
+    console.log(ar);
+
+    //forEach- Iterate array by using loop
+    ar.forEach(x=>console.log(x+10))
+    
+   
+    //map - return values in array by modify elements
+      let res=ar.map(x=>x+10)
+      console.log(res);
+      
+    //filter
+    let res2=ar.filter(x=> x%2==0)
+    console.log(res2);
+    
+
+
+    //reduce
+    let sum=0;
+    for(let x of ar)
+  {
+    sum=sum+x;
+  }
+    console.log(sum);
+let add=ar.reduce((x,y)=> x+y,0)
+console.log(add);
+
+
+
+    
+    //find - returns first matching number
+  let res3=ar.find(x=> x>30)
+  console.log(res3);
+  
+
+    //findIndex - returns index of first matching number
+    let ind=ar.findIndex(x=> x>30)
+    console.log(ind);
+  */  
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* Tag/element selector */
+span{
+    font-size: 10px;
+}
+
+/* Class Selector */
+.heading{
+   text-decoration: underline;
+   background-color: yellow; 
+}
+
+/* ID selector */
+#c{
+    background-color: brown;
+}
+
+h4{
+    color:chartreuse
+}
+.com{
+    color: blue;
+}
+#d{
+    color: beige;
+}
+
+/* Universal Selector */
+*{
+    margin: 0px;
+}
+
+/* Grouping selector */
+h1,h2,#a,.com{
+    border: 2px solid red;
+}
+
+/* Input type selectors */
+input[type="tel"]{
+    background-color: red;
+}

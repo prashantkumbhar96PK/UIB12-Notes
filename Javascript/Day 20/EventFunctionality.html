@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: arial;
+      padding: 20px;
+    }
+
+    .box{
+      padding: 30px;
+      border: 2px solid black;
+      margin: 10px;
+    }
+    #grandparent{
+      background-color:#ffe4e1;
+    }
+
+    #parent
+    {
+      background-color: #6db8b8;
+    }
+
+    #child{
+      background-color: #52ac52;
+      cursor: pointer;
+    }
+    input{
+      width: 300px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+    button{
+      padding: 10px 10px;
+      cursor:pointer
+    }
+  </style>
+</head>
+<body>
+  <h1>JS events demo</h1>
+  <div id="grandparent" class="box">
+    grandparent
+
+      <div id="parent" class="box">
+        Parent
+
+            <div id="child" class="box">
+                  Child (click me)
+            </div>
+      </div>
+
+  </div>
+  <hr>
+  
+  <h2>Debouncing Example</h2>
+  <p>Type in the input box(Search happens after you stopped typing)</p>
+  <input type="text"  id="searchbox" placeholder="Search here...">
+
+  <hr>
+  <h2>Throttling Example</h2>
+  <p>Click buttons many times(action runs every 2 seconds)</p>
+  <button id="throttleButton">Click Fast</button>
+
+  <script>
+    document.getElementById('grandparent').addEventListener('click',()=>{
+      console.log("Grandparent is clicked");
+      
+    })
+      document.getElementById('parent').addEventListener('click',()=>{
+      console.log("parent is clicked");
+      
+    })
+      document.getElementById('child').addEventListener('click',()=>{
+      console.log("child is clicked");
+      
+    })
+
+
+    // Debouncing
+    function debounce(func,delay)
+    {
+      let timer;
+      return function()
+      {
+        clearTimeout(timer);
+        timer=setTimeout(func,delay)
+      }
+
+    }
+    function searchAction()
+    {
+      console.log("Searching API called");
+      
+    }
+
+    const goodSearch=debounce(searchAction,500);
+      document.getElementById('searchbox').addEventListener('keyup',goodSearch);
+
+
+      //Throttling Script
+      function throttle(func,limit)
+    {
+      let flag=true;
+      return function()
+      {
+        if(flag)
+      {
+        func();
+        flag=false;
+        setTimeout(()=>{
+          flag=true;
+        },limit)
+      }
+      }
+
+    }
+    function throtleAction()
+    {
+      console.log("Button clicked (Throttled)");
+      
+    }
+    let betterClick=throttle(throtleAction,2000)
+    document.getElementById('throttleButton').addEventListener('click',betterClick)
+
+  </script>
+</body>
+</html>

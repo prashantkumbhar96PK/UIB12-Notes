@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //  function add()
+    //  {
+    //     console.log(10+20);  
+    //  } 
+
+       let f1=()=>{ console.log(10+20);  } 
+        f1();
+
+        // function sub(x,y)
+        // {
+        //   console.log(x-y);
+        // }
+
+      let f2=(x,y)=>{console.log(x-y);}
+          f2(20,8);
+
+        // function mult()
+        // {
+        //   return 20*3;
+        // }
+
+        // let f3=() => 20*3;
+        //     console.log(f3());
+
+        // function mult()
+        // {
+        //   console.log("This is subtraction function");
+        //   return 20*4;
+        // }
+
+        let f3=() => {
+          console.log("This is subtraction function");
+          return 20*4;
+        }
+        console.log(f3());
+        
+      //   function div(x)
+      // {
+      //     return x/4;
+      //   }
+      //     console.log(div(20));
+          
+         let f4= x => { return x/4;}
+         console.log(f4(20));
+
+         function data()
+         {
+          return {
+            id:1,
+            name:'Akshay'
+          }
+         }
+         let x=data();
+         console.log(x.id);
+         console.log(x.name);
+         
+         let f5=() => ({ id:1,name:'Amit'})
+          let y=f5();
+          console.log(y.id);
+          console.log(y.name);
+
+
+
+        //  let f5=() => {return {
+        //     id:1,
+        //     name:'Akshay'
+        //   }}
+
+        //   let y=f5();
+        //  console.log(y.id);
+        //  console.log(y.name);
+
+
+         
+  </script>
+  
+</body>
+</html>

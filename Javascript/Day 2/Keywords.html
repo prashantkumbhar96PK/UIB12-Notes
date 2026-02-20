@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //  var keyword -1995
+        var age=24; 
+        var age=26;
+
+        function display()
+        {
+           
+           {
+            var x=25;
+           } 
+            console.log(x);
+        }
+
+        display();
+
+    //Let keyword - block level scope
+    function display2()
+    {
+        {
+            let name="akshay";
+             name="abhay";
+            
+        }
+         console.log(name);          
+    }
+    display2()
+
+    // const keyword -block level scope
+    // const address="pune";
+    // const address="mumbai";
+
+    function display3()
+    {
+        {
+            const abc=123;
+        }
+       // console.log(abc);   
+    }
+
+    let p=20;
+      console.log(typeof(p));
+     p="abcd";
+     console.log(typeof p);
+     
+     console.log(p);
+
+
+     
+
+
+
+    display3();
+   </script>
+</body>
+</html>

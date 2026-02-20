@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinking Text</title>
+    <style>
+        .text{
+            font-size: 40px;
+            color: purple;
+            font-weight: bold;
+            animation:blink 2s infinite;
+        }
+        @keyframes blink{
+            0% , 50% ,100% {opacity: 1;}
+            25%,75%{opacity:0}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="text">Blinking Text</div>
+</body>
+</html>

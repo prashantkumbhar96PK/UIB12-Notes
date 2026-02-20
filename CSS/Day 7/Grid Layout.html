@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid in CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        display: grid;
+        background-color: beige;
+        grid-template-areas:
+          "header header"
+          "sidebar content"
+          "footer footer";
+      }
+      .header {
+        grid-area: header;
+        background-color: lightcoral;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: lightgreen;
+      }
+      .content {
+        grid-area: content;
+        background-color: lightskyblue;
+      }
+      .footer {
+        grid-area: footer;
+        background-color: lightgrey;
+      }
+      .item {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">Header</div>
+      <div class="item sidebar">Sidebar</div>
+      <div class="item content">Content</div>
+      <div class="item footer">Footer</div>
+    </div>
+  </body>
+</html>

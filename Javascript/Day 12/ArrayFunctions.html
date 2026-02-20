@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let arr=[1,2,3,4,5,6,7,8,39,11]
+    //push = add elements at the end
+    arr.push(4);
+    console.log(arr);
+    
+
+    //pop - remove last element
+    arr.pop();
+    console.log(arr);
+
+    //unshift - add element in the beginning
+    arr.unshift(0)
+    console.log(arr);
+    
+    //shift - remove first element 
+    arr.shift()
+    console.log(arr);
+
+    //length - give total numbers of element
+    console.log(arr.length);
+    
+    //indexof - returns index no of given element
+    console.log(arr.indexOf(2));
+
+    // includes- check element exist or not
+    console.log(arr.includes(5));
+
+    //slice(start,end)- returns a portion of Array(doesnt change org array)
+    console.log(arr.slice(2,6));
+    console.log(arr);
+    
+    // splice(start,deleteCount,items) - add/delete elements(change org array)
+    arr.splice(2,1,33,34)
+    console.log(arr);
+
+    //concat - merge two arrays (create new array)
+    let arr2=[10,20,30]
+    let mergedArray=arr.concat(arr2);
+    console.log(mergedArray);
+
+    //join- convert array to string
+    console.log(arr.join());  //without seperator
+    console.log(arr.join(' ')); // with seperator
+
+    // reverse - reverse an array
+       console.log(arr);
+      arr.reverse();
+      console.log(arr);
+
+    // sort - sorts array as string
+    console.log(arr);
+    arr.sort();
+    console.log(arr);
+
+    //sort
+    //map
+    //filter
+    //reduce
+    //forEach
+    //find
+    //findIndex
+    
+    
+    
+      
+    
+    
+    
+
+    
+
+    
+    
+
+
+  </script>
+</body>
+</html>

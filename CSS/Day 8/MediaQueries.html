@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: skyblue;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      @media(orientation: landscape)
+      {
+        .box{
+            background-color: blueviolet;
+        }
+      }
+      @media(orientation: portrait)
+      {
+        .box{
+            background-color: chartreuse;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box-1</div>
+      <div class="box">box-2</div>
+      <div class="box">box-3</div>
+      <div class="box">box-4</div>
+      <div class="box">box-5</div>
+      <div class="box">box-6</div>
+      <div class="box">box-7</div>
+      <div class="box">box-8</div>
+    </div>
+  </body>
+</html>

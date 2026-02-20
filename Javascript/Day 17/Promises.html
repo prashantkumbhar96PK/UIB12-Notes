@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback hell and Promises</title>
+</head>
+<body>
+  <script>
+/*
+    //Callback function
+    function greet()
+    {
+      console.log("Good Morning...");
+      
+    }
+    function display(callback)
+    {
+      callback();
+    }
+  display(greet);
+    
+    // Callback hell
+
+    function step1(callback)
+    {
+      setTimeout(()=>{
+        console.log("Step 1 is Completed");
+        callback();
+      },2000)
+    }
+    function step2(callback)
+    {
+      setTimeout(()=>{
+        console.log("Step 2 is Completed");
+        callback();
+      },2000)
+    }
+    function step3(callback)
+    {
+      setTimeout(()=>{
+        console.log("Step 3 is completed");
+        callback();
+      },2000)
+    }
+
+    step1(()=>{
+      step2(()=>{
+        step3(()=>{
+          console.log("All steps are completed");
+          
+        })
+      })
+    })
+
+    //Promise
+    let promise=new Promise((resolve,reject)=>{
+      let flag=true;
+      if(flag)
+    {
+      resolve("The task is completed"); 
+    }
+    else{
+      reject('The task is failed')
+    }
+    })
+
+      console.log(promise);
+      
+      promise.then(res=>{
+        console.log(res);
+      }).
+      catch(err=>
+      {
+        console.log(err);
+      }
+      )
+*/
+      //async - await
+      function getData()
+      {
+        let promise=new Promise((resolve,reject)=>{
+          setTimeout(()=>{
+            resolve("Data is received successfully")
+          },5000)
+        })
+        return promise;
+      }
+
+        async function fetchData()
+        {
+          let result=await getData();  //async
+          console.log(result);
+          console.log("Process is finished"); //sync
+          
+          
+        }
+        fetchData();
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primitive Dataypes in JS</title>
+</head>
+<body>
+    <script>
+        // String - represent characters
+        let s1="CJC"
+        let place='karvenagar'
+        console.log(s1);
+        
+        let s2= `Welcome to ${s1} ${place}`;
+        let s3 ="welcome to "+s1+" "+place;
+        console.log(s2);
+        console.log(s3);
+        console.log(typeof s1);
+        
+        
+        //Number -represent integer or decimal values
+        let age=25;
+       
+        let weight=50.5
+        console.log(age);
+        console.log(typeof age);
+        console.log(0/0); //NaN - not a number
+
+        //Boolean -represents true or false
+        let result=false;
+        console.log(result);
+
+
+        // Null - represent empty value
+        let data =null;
+        console.log(data);
+        
+        // undefined
+        let adhar;
+        console.log(adhar);
+
+        // Bigint - large
+         let num= 987654321987654321n;
+         console.log(num);
+         
+           console.log(typeof num);
+
+        //symbol - represent unique values
+        let num1=Symbol(20);
+        let num2=Symbol(20);
+        console.log(num1);
+        console.log(num2);
+        
+        
+        console.log(num1==num2);
+        
+
+
+            // object - array ,functions
+        let marks=[10,25,30,45,60]
+        console.log(marks);
+
+        function add()
+        {
+            console.log(10+20);
+            
+        }
+        add();
+
+        let obj1={
+          name:"pratik",
+          age:25 ,
+          marks2:[10,20,30,40] ,
+          subtraction : function sub()
+          {
+            console.log(10-2);
+            
+          }
+        }
+        
+        
+         
+
+        
+    </script>
+</body>
+</html>

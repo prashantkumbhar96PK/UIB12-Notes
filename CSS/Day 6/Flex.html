@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Property</title>
+    <style>
+      * {
+        margin: 10px;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color: lightgray;
+        display: flex;
+        height: 800px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* row-gap: 10px; */
+        /* column-gap: 30px; */
+        /* gap: 15px; */
+        flex-wrap: nowrap;
+      }
+      .box {
+        background-color: tomato;
+        color: white;
+        width: 100px;
+        height: 100px;
+      }
+      .c {
+        /* flex-shrink: 3; */
+      }
+      .d {
+        /* flex-grow: 3; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a" style="order: 5">div-1 ---5</div>
+      <div class="box b" style="order: 4">div-2---4</div>
+      <div class="box c" style="order: 2">div-3---2</div>
+      <div class="box d" style="order: 1">div-4---1</div>
+      <div class="box e" style="order: 6">div-5---6</div>
+      <div class="box f" style="order: 3">div-6---3</div>
+    </div>
+  </body>
+</html>

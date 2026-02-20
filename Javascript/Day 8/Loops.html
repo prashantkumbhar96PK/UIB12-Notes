@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      // for loop (traditional)
+    let nums=[10,20,30,40,50]
+      console.log("\n For Loop");
+    // Start     end     movement
+    for(let i=0 ;i<nums.length ;i++ )
+  {
+    console.log(nums[i]);
+    
+  }
+
+
+  //While loop
+  console.log("\n While Loop with reverse data");
+ let i=nums.length-1;
+ while(i>=0)
+ {
+  console.log(nums[i]);
+  i--;
+  
+ }
+
+ //do-while loop
+ console.log("\n Do while Loop");
+ 
+ let j=0;
+ do{
+  console.log(nums[j]);
+  j++;
+ }
+ while(j<nums.length);
+
+console.log("\n For of loop");
+
+ let n=[10,20,30,40,50,60,70];
+ //for of loop => for array iteration
+ for(let i of n)
+ {
+  console.log(i);
+  
+ }
+ let s="abcdefghij"
+ for(let i of s)
+ {
+  console.log(i);
+  
+ }
+
+//For in loop => used for objects
+let person={
+  id:1,
+  name:"tanmay",
+  mobno:12345,
+  age:25
+}
+
+for(let i in person)
+{
+  console.log(i+" "+person[i]);
+  
+}
+for(let i in n)
+{
+  console.log(i+" "+n[i]);
+  
+}
+for(let i in s)
+{
+  console.log(i+" "+s[i]);
+  
+}
+ 
+    
+
+
+  </script>
+</body>
+</html>

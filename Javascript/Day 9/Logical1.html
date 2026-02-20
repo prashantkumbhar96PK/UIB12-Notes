@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+console.log(Math.floor(12.8));
+console.log(Math.ceil(12.2));
+console.log(Math.round(12.5));
+console.log(Math.sqrt(25));
+console.log(Math.cbrt(27));
+console.log(Math.pow(5,8));
+console.log(Math.min(20,5));
+console.log(Math.max(20,5)+"\n\n");
+
+
+
+
+// Reverse the number 123=>321
+let n=123;
+let rev=0;
+
+for(let i=n; i>0 ;i=Math.floor(i/10))
+{
+  
+ let rem=i%10; 
+  rev=rev*10+rem; 
+}
+console.log(rev);
+
+
+// Palindrome number 121=====>121
+let num=1001;
+let reverse=0;
+for(let i=num;i>0; i=Math.floor(i/10))
+{
+  let rem=i%10;
+  reverse=reverse*10+rem;
+}
+if(num===reverse)
+{
+  console.log(`The ${num} is Palindrome Number`);
+  
+}
+else{
+  console.log(`The ${num} is Not Palindrome Number`);
+}
+
+//Digit of Any Numbers
+let number=12111;
+let digit=0;
+for(let i=number; i>0 ; i=Math.floor(i/10))
+{
+digit++;
+}
+console.log(`The ${number} is ${digit} Digit Number`);
+
+
+//Prime Number
+let no=12;
+let fact=0;
+for(let i=2; i<no/2; i++)
+{
+  if(no%i==0)
+{
+fact++;
+}
+}
+if(fact==0)
+{
+  console.log(`The ${no} is Prime Number`);
+  
+}
+else{
+    console.log(`The ${no} is Not Prime Number`);
+}
+
+//Factorial Number 5*4*3*2*1 =120
+let nn=5;
+let fac=1;
+for(let i=nn; i>=1 ; i--)
+{
+  fac=fac*i;
+}
+console.log(fac);
+
+
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
+

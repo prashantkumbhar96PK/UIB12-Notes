@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      let person={
+          "name":"Amit",
+          "age":25,
+          "city":"pune"
+      }
+
+      console.log(person.age);
+      console.log(person["city"]);
+      person.mobno=123456789
+      console.log(person);
+      person.age=26;
+       console.log(person);
+       for (let k in person)
+       {
+        console.log(person[k]);
+        
+       }
+      
+       let jsondata=JSON.stringify(person)
+       console.log(jsondata);
+
+       let jdata=JSON.parse(jsondata)
+       console.log(jdata);
+       
+       
+      
+      
+        console.log("*********************");
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    console.log("Program start");
+    
+    let d=50;
+  
+   try{
+      
+      console.log(d);
+      
+      console.log(d);
+ 
+   }
+   catch(error)
+   {
+    console.log(error);
+    
+   }
+     finally{
+       throw "Error is occured"
+    console.log("Resource is closed");
+    
+   }
+       console.log("Program end");
+    
+    
+  </script>
+  
+</body>
+</html>
