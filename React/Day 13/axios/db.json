@@ -1,0 +1,15 @@
+{
+  "developers": [
+    {
+      "id": "1",
+      "name": "akshay",
+      "salary": 80000
+    },
+    {
+      "id": "3",
+      "name": "rakesh",
+      "salary": 780000
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

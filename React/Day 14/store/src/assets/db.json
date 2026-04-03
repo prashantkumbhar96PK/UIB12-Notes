@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": "prod1",
+      "productName": "samasung galaxy s26 ultra",
+      "description": "ram 24gb, ROM 1TB ",
+      "category": "mobile",
+      "price": 156000,
+      "quantity": 100,
+      "supplier": "samsung ltd",
+      "inStock": true
+    },
+    {
+      "productName": "smart watch",
+      "description": "smart watch with fitness apps",
+      "category": "watch",
+      "price": "3500",
+      "supplier": "noise",
+      "inStock": true,
+      "id": "ZAzoDy9truY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

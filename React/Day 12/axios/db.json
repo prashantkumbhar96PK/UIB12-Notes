@@ -1,0 +1,22 @@
+{
+"developers":[
+
+  {
+    "id":"1",
+    "name":"akshay",
+    "salary":80000
+  },
+   {
+    "id":"2",
+    "name":"amit",
+    "salary":85000
+  },
+   {
+    "id":"3",
+    "name":"rakesh",
+    "salary":780000
+  }
+]
+
+
+}
